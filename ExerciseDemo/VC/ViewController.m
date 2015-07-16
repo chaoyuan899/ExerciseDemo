@@ -16,8 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
+
+
+#pragma mark - Touch Action
+- (IBAction)btnTouch:(id)sender {
+    [self.view endEditing:YES];
+    
+}
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
