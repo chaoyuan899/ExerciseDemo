@@ -15,6 +15,7 @@ static Http *_shareInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _shareInstance = [[Http alloc] init];
+        _shareInstance.responseSerializer = [AFHTTPResponseSerializer serializer];
 //        _shareInstance.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     });
     

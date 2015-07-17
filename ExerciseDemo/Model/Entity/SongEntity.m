@@ -9,7 +9,5 @@
 #import "SongEntity.h"
 
 @implementation SongEntity
--(instancetype)initWithDictionary:(NSDictionary *)dic {
-    return nil;
-}
+
 @end

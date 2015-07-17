@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, Status) {
+    StatusNormal,
+    StatusReceiveSongNanmeNil,
+    StatusNoRoomSingingTheSong,
+    StatusServerError
+};
+
 @interface SongEntity : NSObject
-@property(nonatomic,assign) NSInteger status;
+@property(nonatomic,assign) Status status;
 @property(nonatomic,copy) NSString *roomId;
 @property(nonatomic,copy) NSString *nickName;
 @property(nonatomic,copy) NSString *photoPath;
-
--(instancetype)initWithDictionary:(NSDictionary *)dic;
 @end

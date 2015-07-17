@@ -10,12 +10,11 @@
 #import "Http.h"
 #import "MJExtension.h"
 
-static NSString * const baseURLString = @"http://song.room.fanxing.com/mobquery?songName=";
+static NSString * const baseURLString = @"http://song.room.fanxing.com/mobquery";
 
 @implementation SongBLL
 -(void)searchSongInfoWithSongName:(NSString *)songName success:(void (^)(SongEntity *))repBlock failure:(void (^)(NSError *))expBlock {
-    NSString *songInfoURLString = [NSString stringWithFormat:@"%@%@",baseURLString,songName];
-    [[Http shareInstance] httpGET:songInfoURLString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [[Http shareInstance] httpGET:baseURLString parameters:@{@"songName" : songName} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSError *error;
         if (responseObject != nil) {
             SongEntity *songEntity = [SongEntity objectWithKeyValues:responseObject];

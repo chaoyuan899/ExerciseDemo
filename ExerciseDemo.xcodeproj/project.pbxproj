@@ -19,6 +19,7 @@
 		93E9EE171B5794270057A98A /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E9EE161B5794270057A98A /* UserEntity.m */; };
 		93E9EE1A1B579CDE0057A98A /* SongBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E9EE191B579CDE0057A98A /* SongBLL.m */; };
 		93E9EE1D1B57A09A0057A98A /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E9EE1C1B57A09A0057A98A /* Http.m */; };
+		93E9EE1F1B58A23A0057A98A /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93E9EE1E1B58A23A0057A98A /* default.jpg */; };
 		E8A1A7F4105A476A5F377C8C /* Pods_ExerciseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42871B8F6AB8B8445BCB051 /* Pods_ExerciseDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		93E9EE191B579CDE0057A98A /* SongBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongBLL.m; sourceTree = "<group>"; };
 		93E9EE1B1B57A09A0057A98A /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
 		93E9EE1C1B57A09A0057A98A /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
+		93E9EE1E1B58A23A0057A98A /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 		B42871B8F6AB8B8445BCB051 /* Pods_ExerciseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExerciseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -226,6 +228,7 @@
 		93E9EE091B578B740057A98A /* OtherResource */ = {
 			isa = PBXGroup;
 			children = (
+				93E9EE1E1B58A23A0057A98A /* default.jpg */,
 			);
 			path = OtherResource;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				93E9EDDD1B57804D0057A98A /* Main.storyboard in Resources */,
 				93E9EDE21B57804D0057A98A /* LaunchScreen.xib in Resources */,
 				93E9EDDF1B57804D0057A98A /* Images.xcassets in Resources */,
+				93E9EE1F1B58A23A0057A98A /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
